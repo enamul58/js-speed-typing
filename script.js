@@ -4,11 +4,13 @@ const quoteInputElement = document.getElementById("quoteInput");
 const timerElement = document.getElementById("timer");
 
 quoteInputElement.addEventListener("input", () => {
+ 
   const arrayQuote = quoteDisplayElement.querySelectorAll("span");
-
   const arrayInput = quoteInputElement.value.split("");
+ 
   let newString = true;
   arrayQuote.forEach((arrayQuoteValue, index) => {
+ 
     const characterArrayInput = arrayInput[index];
 
     if (characterArrayInput == null) {
